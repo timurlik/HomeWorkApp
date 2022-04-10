@@ -1,7 +1,8 @@
 public class LessonTwo {
     public static void main (String[]args) {
+        doAnotherNestedLoop();
 
-        char operator = '*';
+        /*char operator = '*';
         switch (operator) {
             case '+':
                 System.out.println(sum(2,3));
@@ -15,7 +16,7 @@ public class LessonTwo {
             case '/':
                 System.out.println(divide(2,3));
                 break;
-        }
+        }*/
 
     }
     private static int sum (int a, int b) {
@@ -51,6 +52,15 @@ public class LessonTwo {
         while (x < 100000) {
             x = (x + 4) * x + 12;
             System.out.println(x);
+        }
+    }
+    private static void doAnotherNestedLoop() {
+        int c = 0;
+        for (int i = 1; i < 5; i ++) {
+            for ( int j = 1; j < 5; j++) {
+                c = c + i - j;
+                System.out.println(c);
+            }
         }
     }
 }
