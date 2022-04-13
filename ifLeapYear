@@ -1,12 +1,8 @@
 public class Main{
 	public static void main(String[] args) {
-        ifLeapYear(2001);
+        System.out.println(ifLeapYear(2000));
 	}
-	public static void ifLeapYear (int x) {
-	    if ((x % 4 == 0) && (x % 100 != 0 ) || (x % 400 == 0)) {
-      System.out.println("Год високосный");
-      }
-	    else {System.out.println("Год не високосный");
-      }
+	public static boolean ifLeapYear (int x) {
+	    return ((x % 4 == 0) && (x % 100 != 0 ) || (x % 400 == 0));
 	}    
 }
